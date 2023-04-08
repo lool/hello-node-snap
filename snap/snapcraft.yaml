@@ -1,0 +1,14 @@
+name: hello-node
+base: core22
+version: '1.0'
+summary: Whatever
+description: Whatever
+grade: devel
+confinement: devmode
+
+parts:
+  hello-node:
+    plugin: npm
+    source: src
+    npm-include-node: true
+    npm-node-version: 18.15.0
